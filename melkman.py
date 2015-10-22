@@ -99,8 +99,8 @@ def melkman(chain):
     else:
         CH = [chain[2], chain[1], chain[0], chain[2]]
 
-    show_step(chain, CH, 2, 'after init')
     i = 3
+    show_step(chain, CH, 2, 'after init')
 
     while i < len(chain):
         while left(CH[len(CH)-2], CH[len(CH)-1], chain[i], debug=ARROW_DEBUG, chain=chain, CH=CH, i=i) \
